@@ -18,3 +18,18 @@ for d in data:
     if len(d)<100:
         new.append(d)
 print('一共有',len(new),'筆留言長度小於100')
+
+good = []
+for d in data:
+    if 'good' in d:
+        good.append(d)
+print('有good的留言有: ',len(good),'筆')
+dd=[d for d in data]
+print(dd)
+
+good = [d for d in data if 'good' in d] #good是一個清單  第一個d就是上面的append(d)
+
+bad=['bad' in d for d in data] #1000000筆d 每一筆列出是true  / false
+bad = []
+for d in data:
+    bad.append('bad' in d)
