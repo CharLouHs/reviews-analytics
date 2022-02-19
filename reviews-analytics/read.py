@@ -10,5 +10,5 @@ with open('../reviews.txt','r') as f:
             print(len(data))
 print('檔案讀取完，共有',len(data),'筆資料')
 avg= k/len(data)
-print('平均長度為: ',avg ,'個字')
+print('平均長度為: ',avg ,' 個字')
 print(data[0])
