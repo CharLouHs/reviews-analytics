@@ -1,7 +1,7 @@
 data=[]
 count=0
 k=0
-with open('../reviews.txt','r') as f:
+with open('./reviews.txt','r') as f:
     for line in f:
         data.append(line)
         k+=len(line)
