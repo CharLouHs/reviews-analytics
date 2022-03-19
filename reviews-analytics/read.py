@@ -1,6 +1,8 @@
+import time
 data=[]
 count=0
 k=0
+start_time=time.time()
 with open('./reviews.txt','r') as f:
     for line in f:
         data.append(line)
@@ -33,3 +35,6 @@ bad=['bad' in d for d in data] #1000000筆d 每一筆列出是true  / false
 bad = []
 for d in data:
     bad.append('bad' in d)
+
+end_time=time.time()
+print('花了',end_time-start_time,'秒')
